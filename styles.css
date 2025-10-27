@@ -1,0 +1,565 @@
+/* Variables para colores (basado en la imagen) */
+:root {
+    --primary-color: #9747FF; /* Morado principal */
+    --secondary-color: #D4A8FF; /* Lila claro */
+    --background-light: #FBF9FF; /* Fondo muy claro */
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --gradient-bg: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    --gradient-hero: linear-gradient(90deg, #FBF9FF 70%, var(--secondary-color) 100%); /* Simulación del fondo del Hero */
+    --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset y Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Se recomienda usar una fuente moderna como Poppins */
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--background-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Botones */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #7A35E0;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* 1. Encabezado */
+.header {
+    background-color: var(--background-light);
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.btn-login {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px 20px;
+}
+
+/* 2. Sección Principal (Hero) */
+.hero-section {
+    background: var(--gradient-hero); /* Fondo degradado simulado */
+    padding: 100px 0;
+    text-align: left;
+}
+
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-actions .btn {
+    margin-right: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Para simular el efecto de la chica con el fondo morado */
+}
+
+/* 3. Sección de Marcas (Logos) */
+.brand-logos {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.brand-logos .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-logos img {
+    height: 30px; /* Ajusta el tamaño de los logos */
+    opacity: 0.6;
+}
+
+/* 4. Sección de Búsqueda y Beneficios */
+.search-benefits-section {
+    padding-top: 50px;
+}
+
+.search-bar-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+}
+
+.search-form input {
+    flex-grow: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+.learning-benefits-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.student-photos {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 500px; /* Para mantener el tamaño de la parte de fotos */
+}
+
+.photo-card {
+    height: 180px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Simulación de colores de las fotos (difícil de replicar sin las imágenes) */
+.p-red { background-color: #FF5E5E; }
+.p-orange { background-color: #FFAA47; }
+.p-purple { background-color: var(--primary-color); }
+.p-blue { background-color: #47AFFF; }
+
+
+.benefits-list {
+    flex: 1;
+    padding: 20px;
+}
+
+.benefits-list h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.benefits-list ul {
+    list-style: none;
+}
+
+.benefits-list ul li {
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits-list ul li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.view-free-courses {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* 5. Sección de Cursos Populares */
+.popular-courses-section {
+    background: var(--gradient-bg);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.popular-courses-section h2 {
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-img-placeholder {
+    height: 150px;
+    background-color: #eee;
+    background-image: url('laptop-course.png'); /* Simula la imagen del curso */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-card h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.course-instructor {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.course-info i {
+    margin-right: 5px;
+}
+
+.course-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* 6. Sección de Profesor Certificado */
+.teacher-section .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+    margin: 40px auto;
+}
+
+.teacher-content {
+    flex: 1;
+}
+
+.teacher-content h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.teacher-content h3 {
+    font-size: 36px;
+}
+
+.teacher-perks {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.teacher-perks span {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-teacher {
+    margin-top: 10px;
+}
+
+.teacher-image {
+    flex: 1;
+    text-align: center;
+}
+
+.teacher-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/* 7. Sección de Testimonios */
+.testimonials-section {
+    background: var(--gradient-bg);
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.testimonials-section h2 {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.profile-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: -60px auto 15px auto; /* Para simular que la foto "sobresale" */
+    border: 5px solid #fff;
+    box-shadow: var(--shadow-light);
+}
+
+.testimony-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.testimony-name {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* 8. Pie de Página (Footer) */
+.footer {
+    background-color: var(--background-light);
+    padding: 50px 0 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-col {
+    flex-basis: 200px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #888;
+}
+
+/* MEDIA QUERIES para Responsividad (como se ve en la derecha de tu imagen) */
+@media (max-width: 992px) {
+    .nav {
+        display: none; /* O se convierte en un menú hamburguesa */
+    }
+
+    .hero-section .container {
+        flex-direction: column-reverse; /* Imagen arriba, texto abajo */
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .learning-benefits-grid,
+    .teacher-section .container {
+        flex-direction: column;
+    }
+
+    .student-photos {
+        max-width: 100%;
+    }
+
+    .courses-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móvil */
+    }
+
+    .course-card {
+        text-align: center;
+    }
+
+    .course-info {
+        justify-content: center;
+    }
+
+    .teacher-image img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header .container {
+        flex-direction: column;
+    }
+
+    .btn-login {
+        margin-top: 10px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .btn-search {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+}
