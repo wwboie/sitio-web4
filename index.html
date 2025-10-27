@@ -1,11 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etech - Landing Page de E-Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    sss
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Etech.</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-login">Iniciar Sesión</button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Desarrolla tus habilidades de una manera nueva y única</h1>
+                <p>Explora un mundo de aprendizaje con nuestros cursos expertos.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">Empezar Ahora</button>
+                    <button class="btn btn-secondary">Ver Demo</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="mujer-aprendiendo.png" alt="Mujer joven aprendiendo en laptop">
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-logos">
+        <div class="container">
+            <img src="logo-duolingo.svg" alt="duolingo">
+            <img src="logo-magic-leap.svg" alt="magic leap">
+            <img src="logo-microsoft.svg" alt="microsoft">
+            <img src="logo-codecademy.svg" alt="codecademy">
+            <img src="logo-pinterest.svg" alt="pinterest">
+        </div>
+    </section>
+
+    <section class="search-benefits-section">
+        <div class="container">
+            <div class="search-bar-area">
+                <h2 class="search-title">Buscar Cursos</h2>
+                <div class="search-form">
+                    <input type="text" placeholder="Escribe el nombre del curso...">
+                    <button class="btn btn-search">Buscar</button>
+                </div>
+            </div>
+
+            <div class="learning-benefits-grid">
+                <div class="student-photos">
+                    <div class="photo-card p-red"></div>
+                    <div class="photo-card p-orange"></div>
+                    <div class="photo-card p-purple"></div>
+                    <div class="photo-card p-blue"></div>
+                </div>
+
+                <div class="benefits-list">
+                    <h3>Beneficios de Nuestro Aprendizaje en Línea</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Cursos cortos</li>
+                        <li><i class="fas fa-check-circle"></i> Horarios flexibles</li>
+                        <li><i class="fas fa-check-circle"></i> Tutores expertos</li>
+                        <li><i class="fas fa-check-circle"></i> Acceso 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Nuevas habilidades</li>
+                        <li><i class="fas fa-check-circle"></i> Certificados</li>
+                    </ul>
+                    <a href="#" class="view-free-courses">Ver cursos gratuitos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-courses-section">
+        <div class="container">
+            <h2>Nuestros Cursos Populares</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-img-placeholder"></div>
+                    <h4>Diseño Web & UX/UI</h4>
+                    <p class="course-instructor">Por Jane Doe</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                        <span><i class="fas fa-users"></i> 100 estudiantes</span>
+                    </div>
+                    <div class="course-price">$199.00</div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-img-placeholder"></div>
+                    <h4>Introducción a la Microestructura</h4>
+                    <p class="course-instructor">Por John Smith</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                        <span><i class="fas fa-users"></i> 85 estudiantes</span>
+                    </div>
+                    <div class="course-price">$250.00</div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-img-placeholder"></div>
+                    <h4>Python para Data Science</h4>
+                    <p class="course-instructor">Por Alice Johnson</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-star"></i> 4.7</span>
+                        <span><i class="fas fa-users"></i> 120 estudiantes</span>
+                    </div>
+                    <div class="course-price">$180.00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teacher-section">
+        <div class="container">
+            <div class="teacher-content">
+                <h2>Si eres un profesor certificado...</h2>
+                <h3>¡Conviértete en un instructor!</h3>
+                <p>Disfruta de muchos beneficios, incluyendo la gestión de tu propio contenido.</p>
+                <div class="teacher-perks">
+                    <span>Beneficio 1</span>
+                    <span>Beneficio 2</span>
+                    <span>Beneficio 3</span>
+                    <span>Beneficio 4</span>
+                </div>
+                <button class="btn btn-primary btn-teacher">Aplica Ahora</button>
+            </div>
+            <div class="teacher-image">
+                <img src="mujer-profesora.png" alt="Profesora feliz">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Testimonios de Estudiantes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="profile-placeholder"></div>
+                    <p class="testimony-text">"¡Experiencia increíble! El curso me ayudó a conseguir mi primer trabajo."</p>
+                    <p class="testimony-name">Laura Pérez</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="profile-placeholder"></div>
+                    <p class="testimony-text">"Clases muy bien explicadas y tutores siempre disponibles. ¡Recomendado!"</p>
+                    <p class="testimony-name">Carlos Ruiz</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="profile-placeholder"></div>
+                    <p class="testimony-text">"La flexibilidad horaria fue lo mejor para mí. Aprendí a mi propio ritmo."</p>
+                    <p class="testimony-name">Sofía Gómez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Etech.</h4>
+                <p>Aprende de los mejores.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Compañía</h4>
+                <ul><li>Acerca de</li><li>Blog</li><li>Carreras</li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <ul><li>Ayuda</li><li>Términos</li><li>Privacidad</li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>info@etech.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Etech. Todos los derechos reservados.
+        </div>
+    </footer>
+
 </body>
 </html>
