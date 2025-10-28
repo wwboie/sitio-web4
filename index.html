@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etech - Landing Page de E-Learning</title>
+    <title>Colegio Industrial N° 4 “José Menéndez”</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,35 +11,31 @@
 
     <header class="header">
         <div class="container">
-            <div class="logo">Etech.</div>
+            <div class="logo">Escuela Industrial N° 4</div>
             <nav class="nav">
                 <ul>
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#about">Institucional</a></li>
                     <li><a href="#about">Acerca de</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
-            </nav>
-            <button class="btn btn-login">Iniciar Sesión</button>
-        </div>
     </header>
-
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Desarrolla tus habilidades de una manera nueva y única</h1>
-                <p>Explora un mundo de aprendizaje con nuestros cursos expertos.</p>
+                <h1>Formamos profesionales para el futuro</h1>
+                <p>Comprometidos con la educación técnica de calidad en Río Gallegos.</p>
                 <div class="hero-actions">
-                    <button class="btn btn-primary">Empezar Ahora</button>
-                    <button class="btn btn-secondary">Ver Demo</button>
+                    <button class="btn btn-primary">Conocé más</button>
+                    <button class="btn btn-secondary">Ver Tecnicaturas</button>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="mujer-aprendiendo.png" alt="Mujer joven aprendiendo en laptop">
+                <img src="mujer-aprendiendo.png" alt="Estudiante aprendiendo en laptop">
             </div>
         </div>
     </section>
-
     <section class="brand-logos">
         <div class="container">
             <img src="logo-duolingo.svg" alt="duolingo">
@@ -49,8 +45,7 @@
             <img src="logo-pinterest.svg" alt="pinterest">
         </div>
     </section>
-
-    <section class="search-benefits-section">
+    <section class="search-benefits-section" id="courses">
         <div class="container">
             <div class="search-bar-area">
                 <h2 class="search-title">Buscar Cursos</h2>
@@ -59,7 +54,6 @@
                     <button class="btn btn-search">Buscar</button>
                 </div>
             </div>
-
             <div class="learning-benefits-grid">
                 <div class="student-photos">
                     <div class="photo-card p-red"></div>
@@ -67,127 +61,121 @@
                     <div class="photo-card p-purple"></div>
                     <div class="photo-card p-blue"></div>
                 </div>
-
                 <div class="benefits-list">
-                    <h3>Beneficios de Nuestro Aprendizaje en Línea</h3>
+                    <h3>Beneficios de Nuestra Educación Técnica</h3>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Cursos cortos</li>
-                        <li><i class="fas fa-check-circle"></i> Horarios flexibles</li>
-                        <li><i class="fas fa-check-circle"></i> Tutores expertos</li>
-                        <li><i class="fas fa-check-circle"></i> Acceso 24/7</li>
-                        <li><i class="fas fa-check-circle"></i> Nuevas habilidades</li>
-                        <li><i class="fas fa-check-circle"></i> Certificados</li>
+                        <li><i class="fas fa-check-circle"></i> Formación práctica y teórica</li>
+                        <li><i class="fas fa-check-circle"></i> Talleres equipados</li>
+                        <li><i class="fas fa-check-circle"></i> Certificación oficial</li>
+                        <li><i class="fas fa-check-circle"></i> Docentes especializados</li>
+                        <li><i class="fas fa-check-circle"></i> Inserción laboral</li>
+                        <li><i class="fas fa-check-circle"></i> Innovación y tecnología</li>
                     </ul>
-                    <a href="#" class="view-free-courses">Ver cursos gratuitos <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="popular-courses-section">
         <div class="container">
-            <h2>Nuestros Cursos Populares</h2>
+            <h2>Especialidades Destacadas</h2>
             <div class="courses-grid">
                 <div class="course-card">
                     <div class="course-img-placeholder"></div>
-                    <h4>Diseño Web & UX/UI</h4>
-                    <p class="course-instructor">Por Jane Doe</p>
-                    <div class="course-info">
-                        <span><i class="fas fa-star"></i> 4.9</span>
-                        <span><i class="fas fa-users"></i> 100 estudiantes</span>
-                    </div>
-                    <div class="course-price">$199.00</div>
+                    <h4>Electromecánica</h4>
+                    <p class="course-instructor">Formación en sistemas eléctricos y mecánicos.</p>
                 </div>
-
                 <div class="course-card">
                     <div class="course-img-placeholder"></div>
-                    <h4>Introducción a la Microestructura</h4>
-                    <p class="course-instructor">Por John Smith</p>
-                    <div class="course-info">
-                        <span><i class="fas fa-star"></i> 4.8</span>
-                        <span><i class="fas fa-users"></i> 85 estudiantes</span>
-                    </div>
-                    <div class="course-price">$250.00</div>
+                    <h4>Electrónica</h4>
+                    <p class="course-instructor">Formación en sistemas eléctricos.</p>
                 </div>
-
                 <div class="course-card">
                     <div class="course-img-placeholder"></div>
-                    <h4>Python para Data Science</h4>
-                    <p class="course-instructor">Por Alice Johnson</p>
-                    <div class="course-info">
-                        <span><i class="fas fa-star"></i> 4.7</span>
-                        <span><i class="fas fa-users"></i> 120 estudiantes</span>
-                    </div>
-                    <div class="course-price">$180.00</div>
+                    <h4>Informática</h4>
+                    <p class="course-instructor">Programación, redes y soporte técnico.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-img-placeholder"></div>
+                    <h4>Construcciones</h4>
+                    <p class="course-instructor">Diseño técnico y ejecución de obras.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="teacher-section">
+    <section class="teacher-section" id="about">
         <div class="container">
             <div class="teacher-content">
-                <h2>Si eres un profesor certificado...</h2>
-                <h3>¡Conviértete en un instructor!</h3>
-                <p>Disfruta de muchos beneficios, incluyendo la gestión de tu propio contenido.</p>
-                <div class="teacher-perks">
-                    <span>Beneficio 1</span>
-                    <span>Beneficio 2</span>
-                    <span>Beneficio 3</span>
-                    <span>Beneficio 4</span>
-                </div>
-                <button class="btn btn-primary btn-teacher">Aplica Ahora</button>
+                <h2>Compromiso con la enseñanza técnica</h2>
+                <p>El Colegio Industrial N° 4 “José Menéndez” impulsa la educación técnica con una visión moderna, práctica y humana. Buscamos desarrollar profesionales capaces de enfrentar los desafíos del futuro con conocimiento, ética y compromiso.</p>
             </div>
             <div class="teacher-image">
-                <img src="mujer-profesora.png" alt="Profesora feliz">
+                <img src="mujer-profesora.png" alt="Profesora explicando">
             </div>
         </div>
     </section>
 
-    <section class="testimonials-section">
+    <section class="testimonials-section" id="contact">
         <div class="container">
             <h2>Testimonios de Estudiantes</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="profile-placeholder"></div>
-                    <p class="testimony-text">"¡Experiencia increíble! El curso me ayudó a conseguir mi primer trabajo."</p>
+                    <p class="testimony-text">"El Industrial 4 me dio las herramientas para seguir Ingeniería."</p>
                     <p class="testimony-name">Laura Pérez</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="profile-placeholder"></div>
-                    <p class="testimony-text">"Clases muy bien explicadas y tutores siempre disponibles. ¡Recomendado!"</p>
+                    <p class="testimony-text">"Aprendí mucho en los talleres. Los profes siempre ayudan."</p>
                     <p class="testimony-name">Carlos Ruiz</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="profile-placeholder"></div>
-                    <p class="testimony-text">"La flexibilidad horaria fue lo mejor para mí. Aprendí a mi propio ritmo."</p>
+                    <p class="testimony-text">"Una gran experiencia educativa y humana."</p>
                     <p class="testimony-name">Sofía Gómez</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===== FOOTER INSTITUCIONAL ===== -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-grid">
+
             <div class="footer-col">
-                <h4>Etech.</h4>
-                <p>Aprende de los mejores.</p>
+                <h4>Institución</h4>
+                <ul>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#courses">Tecnicaturas</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </div>
-            <div class="footer-col">
-                <h4>Compañía</h4>
-                <ul><li>Acerca de</li><li>Blog</li><li>Carreras</li></ul>
-            </div>
-            <div class="footer-col">
-                <h4>Soporte</h4>
-                <ul><li>Ayuda</li><li>Términos</li><li>Privacidad</li></ul>
-            </div>
+
             <div class="footer-col">
                 <h4>Contacto</h4>
-                <p>info@etech.com</p>
+                <p><strong>Email:</strong> industrial4rg@gmail.com</p>
+                <p><strong>Tel. Edificio teoría:</strong> 02966 42-7707</p>
+                <p><strong>Tel. Taller:</strong> 02966 42-7615</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ubicaciones</h4>
+                <p><strong>Edificio teoría:</strong><br>
+                    Bartolomé Mitre 291, Z9400ATE,<br>
+                    Río Gallegos, Santa Cruz.</p>
+                <p><strong>Taller:</strong><br>
+                    Gdor. Mayer 300-398, Z9400ARH,<br>
+                    Río Gallegos, Santa Cruz.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <p><strong>Días laborables:</strong> 7:20 a.m. - 11:10 p.m.</p>
+                <p><strong>Sábados:</strong> 8:50 a.m. - 11:50 a.m.</p>
             </div>
         </div>
+
         <div class="copyright">
-            &copy; 2025 Etech. Todos los derechos reservados.
+            <p>Derechos de autor © Colegio Industrial N° 4 “José Menéndez”. Todos los derechos reservados.</p>
         </div>
     </footer>
 
