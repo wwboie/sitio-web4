@@ -3,48 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio Industrial N° 4 “José Menéndez”</title>
+    <title>Etech - Landing Page de E-Learning</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Botón Volver Arriba -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <header class="header">
         <div class="container">
-            <div class="logo">Escuela Industrial N° 4</div>
-            <nav class="nav">
+            <div class="logo">Etech.</div>
+            <button class="menu-toggle" aria-label="Abrir menú de navegación" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="mainNav">
                 <ul>
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#courses">Cursos</a></li>
-                    <li><a href="#about">Institucional</a></li>
                     <li><a href="#about">Acerca de</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
+            </nav>
+            <button class="btn btn-login" id="openLoginModal">Iniciar Sesión</button>
+        </div>
     </header>
-    <section class="hero-section" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Formamos profesionales para el futuro</h1>
-                <p>Comprometidos con la educación técnica de calidad en Río Gallegos.</p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary">Conocé más</button>
-                    <button class="btn btn-secondary">Ver Tecnicaturas</button>
+
+    <!-- Hero Section Fullscreen -->
+    <section class="hero-section fullscreen-hero" id="home">
+        <div class="hero-background">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="Estudiante aprendiendo en línea">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="Grupo de estudiantes colaborando">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="Profesor enseñando en línea">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="mujer-aprendiendo.png" alt="Estudiante aprendiendo en laptop">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Desarrolla tus habilidades de una manera nueva y única</h1>
+                <p>Explora un mundo de aprendizaje con nuestros cursos expertos.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="openRegisterModal">Empezar Ahora</button>
+                    <button class="btn btn-secondary">Ver Demo</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Estudiantes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Cursos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Satisfacción</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Instructores</div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="brand-logos">
+
+    <!-- Sección de Redes Sociales -->
+    <section class="social-section">
         <div class="container">
-            <img src="logo-duolingo.svg" alt="duolingo">
-            <img src="logo-magic-leap.svg" alt="magic leap">
-            <img src="logo-microsoft.svg" alt="microsoft">
-            <img src="logo-codecademy.svg" alt="codecademy">
-            <img src="logo-pinterest.svg" alt="pinterest">
+            <h2>Síguenos en nuestras redes</h2>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
         </div>
     </section>
+
     <section class="search-benefits-section" id="courses">
         <div class="container">
             <div class="search-bar-area">
@@ -54,130 +134,200 @@
                     <button class="btn btn-search">Buscar</button>
                 </div>
             </div>
+
             <div class="learning-benefits-grid">
                 <div class="student-photos">
-                    <div class="photo-card p-red"></div>
-                    <div class="photo-card p-orange"></div>
-                    <div class="photo-card p-purple"></div>
-                    <div class="photo-card p-blue"></div>
+                    <div class="photo-card p-red" style="background-image: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="photo-card p-orange" style="background-image: url('https://images.unsplash.com/photo-1551836026-d5c88ac5d691?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="photo-card p-purple" style="background-image: url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="photo-card p-blue" style="background-image: url('https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
                 </div>
+
                 <div class="benefits-list">
-                    <h3>Beneficios de Nuestra Educación Técnica</h3>
+                    <h3>Beneficios de Nuestro Aprendizaje en Línea</h3>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Formación práctica y teórica</li>
-                        <li><i class="fas fa-check-circle"></i> Talleres equipados</li>
-                        <li><i class="fas fa-check-circle"></i> Certificación oficial</li>
-                        <li><i class="fas fa-check-circle"></i> Docentes especializados</li>
-                        <li><i class="fas fa-check-circle"></i> Inserción laboral</li>
-                        <li><i class="fas fa-check-circle"></i> Innovación y tecnología</li>
+                        <li><i class="fas fa-check-circle"></i> Cursos cortos</li>
+                        <li><i class="fas fa-check-circle"></i> Horarios flexibles</li>
+                        <li><i class="fas fa-check-circle"></i> Tutores expertos</li>
+                        <li><i class="fas fa-check-circle"></i> Acceso 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Nuevas habilidades</li>
+                        <li><i class="fas fa-check-circle"></i> Certificados</li>
                     </ul>
+                    <a href="#" class="view-free-courses">Ver cursos gratuitos <i class="fas fa-arrow-right"></i></a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="popular-courses-section">
-        <div class="container">
-            <h2>Especialidades Destacadas</h2>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-img-placeholder"></div>
-                    <h4>Electromecánica</h4>
-                    <p class="course-instructor">Formación en sistemas eléctricos y mecánicos.</p>
-                </div>
-                <div class="course-card">
-                    <div class="course-img-placeholder"></div>
-                    <h4>Electrónica</h4>
-                    <p class="course-instructor">Formación en sistemas eléctricos.</p>
-                </div>
-                <div class="course-card">
-                    <div class="course-img-placeholder"></div>
-                    <h4>Informática</h4>
-                    <p class="course-instructor">Programación, redes y soporte técnico.</p>
-                </div>
-                <div class="course-card">
-                    <div class="course-img-placeholder"></div>
-                    <h4>Construcciones</h4>
-                    <p class="course-instructor">Diseño técnico y ejecución de obras.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="teacher-section" id="about">
-        <div class="container">
-            <div class="teacher-content">
-                <h2>Compromiso con la enseñanza técnica</h2>
-                <p>El Colegio Industrial N° 4 “José Menéndez” impulsa la educación técnica con una visión moderna, práctica y humana. Buscamos desarrollar profesionales capaces de enfrentar los desafíos del futuro con conocimiento, ética y compromiso.</p>
-            </div>
-            <div class="teacher-image">
-                <img src="mujer-profesora.png" alt="Profesora explicando">
             </div>
         </div>
     </section>
 
-    <section class="testimonials-section" id="contact">
+    <section class="popular-courses-section">
+        <div class="container">
+            <h2>Nuestros Cursos Populares</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
+                    <h4>Diseño Web & UX/UI</h4>
+                    <p class="course-instructor">Por Jane Doe</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                        <span><i class="fas fa-users"></i> 100 estudiantes</span>
+                    </div>
+                    <div class="course-price">$199.000</div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
+                    <h4>Introducción a la Microestructura</h4>
+                    <p class="course-instructor">Por John Smith</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                        <span><i class="fas fa-users"></i> 85 estudiantes</span>
+                    </div>
+                    <div class="course-price">$250.0000</div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80')"></div>
+                    <h4>Python para Data Science</h4>
+                    <p class="course-instructor">Por Alice Johnson</p>
+                    <div class="course-info">
+                        <span><i class="fas fa-star"></i> 4.7</span>
+                        <span><i class="fas fa-users"></i> 120 estudiantes</span>
+                    </div>
+                    <div class="course-price">$185.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teacher-section" id="about">
+        <div class="container">
+            <div class="teacher-content">
+                <h2>Si eres un profesor certificado...</h2>
+                <h3>¡Conviértete en un instructor!</h3>
+                <p>Disfruta de muchos beneficios, incluyendo la gestión de tu propio contenido.</p>
+                <div class="teacher-perks">
+                    <span>Beneficio 1</span>
+                    <span>Beneficio 2</span>
+                    <span>Beneficio 3</span>
+                    <span>Beneficio 4</span>
+                </div>
+                <button class="btn btn-primary btn-teacher">Aplica Ahora</button>
+            </div>
+            <div class="teacher-image">
+                <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Profesora feliz">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
         <div class="container">
             <h2>Testimonios de Estudiantes</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="profile-placeholder"></div>
-                    <p class="testimony-text">"El Industrial 4 me dio las herramientas para seguir Ingeniería."</p>
+                    <div class="profile-img" style="background-image: url('https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80')"></div>
+                    <p class="testimony-text">"¡Experiencia increíble! El curso me ayudó a conseguir mi primer trabajo."</p>
                     <p class="testimony-name">Laura Pérez</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="profile-placeholder"></div>
-                    <p class="testimony-text">"Aprendí mucho en los talleres. Los profes siempre ayudan."</p>
+                    <div class="profile-img" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80')"></div>
+                    <p class="testimony-text">"Clases muy bien explicadas y tutores siempre disponibles. ¡Recomendado!"</p>
                     <p class="testimony-name">Carlos Ruiz</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="profile-placeholder"></div>
-                    <p class="testimony-text">"Una gran experiencia educativa y humana."</p>
+                    <div class="profile-img" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80')"></div>
+                    <p class="testimony-text">"La flexibilidad horaria fue lo mejor para mí. Aprendí a mi propio ritmo."</p>
                     <p class="testimony-name">Sofía Gómez</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== FOOTER INSTITUCIONAL ===== -->
-    <footer class="footer">
-        <div class="container footer-grid">
-
-            <div class="footer-col">
-                <h4>Institución</h4>
-                <ul>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#courses">Tecnicaturas</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <p><strong>Email:</strong> industrial4rg@gmail.com</p>
-                <p><strong>Tel. Edificio teoría:</strong> 02966 42-7707</p>
-                <p><strong>Tel. Taller:</strong> 02966 42-7615</p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Ubicaciones</h4>
-                <p><strong>Edificio teoría:</strong><br>
-                    Bartolomé Mitre 291, Z9400ATE,<br>
-                    Río Gallegos, Santa Cruz.</p>
-                <p><strong>Taller:</strong><br>
-                    Gdor. Mayer 300-398, Z9400ARH,<br>
-                    Río Gallegos, Santa Cruz.</p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Horarios</h4>
-                <p><strong>Días laborables:</strong> 7:20 a.m. - 11:10 p.m.</p>
-                <p><strong>Sábados:</strong> 8:50 a.m. - 11:50 a.m.</p>
+    <!-- Modal de Registro -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Crear Cuenta</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirmar contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Registrarse</button>
+            </form>
+            <div class="modal-footer">
+                <p>¿Ya tienes cuenta? <a href="#" id="switchToLogin">Iniciar Sesión</a></p>
             </div>
         </div>
+    </div>
 
+    <!-- Modal de Login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Recordarme
+                    </label>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Iniciar Sesión</button>
+            </form>
+            <div class="modal-footer">
+                <p>¿No tienes cuenta? <a href="#" id="switchToRegister">Registrarse</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Etech.</h4>
+                <p>Aprende de los mejores.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Compañía</h4>
+                <ul>
+                    <li>Acerca de</li>
+                    <li>Blog</li>
+                    <li>Carreras</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <ul>
+                    <li>Ayuda</li>
+                    <li>Términos</li>
+                    <li>Privacidad</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>info@etech.com</p>
+            </div>
+        </div>
         <div class="copyright">
-            <p>Derechos de autor © Colegio Industrial N° 4 “José Menéndez”. Todos los derechos reservados.</p>
+            2025 Etech. Todos los derechos reservados.
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
